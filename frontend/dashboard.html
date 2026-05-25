@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+  <div class="dashboard-container">
+
+    <h2>Finance Dashboard</h2>
+
+    <input id="amount" placeholder="Amount">
+
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+
+    <input id="category" placeholder="Category">
+
+    <button onclick="addTransaction()">Add Transaction</button>
+
+    <h3>Transactions</h3>
+    <ul id="list"></ul>
+
+    <h3 id="balance"></h3>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
